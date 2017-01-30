@@ -10,8 +10,155 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="es.iesguadalpea.dptoinformatica.isaias.basesdedatossqlite.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:padding="10dp"
+        android:background="?android:attr/colorButtonNormal">
+
+        <TextView
+            android:text="Inserción de Profesores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitulo"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etDni"
+            tools:text="Introduzca el DNI"
+            android:text="DNI" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etNombre"
+            tools:text="Introduzca el Nombre"
+            android:contentDescription="ok"
+            android:text="NOMBRE" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="APELLIDOS"
+            android:ems="10"
+            android:id="@+id/etApellidos"
+            tools:text="Introduzca los Apellidos" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Curso que imparte:"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:id="@+id/txtCurso"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnCursos" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <CheckBox
+                android:text="Administracion S.O."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkAso" />
+
+            <CheckBox
+                android:text="Implantación de S.O."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkIso" />
+
+            <CheckBox
+                android:text="Programación en Android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkProgramacionAndroid" />
+
+            <CheckBox
+                android:text="Programación en Java"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkProgramacionJava" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Email"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                tools:text="Introduzca el Email"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:elevation="6dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Mostrar Profesores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnProfesores"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:text="Insertar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnInsertar"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
