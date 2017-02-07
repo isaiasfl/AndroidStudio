@@ -70,7 +70,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spnCursos" />
+                android:id="@+id/spnCursos"
+                />
 
         </LinearLayout>
 
@@ -146,6 +147,7 @@
                 android:background="@color/colorPrimary"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:onClick="mostrarProfesores"
                 />
 
             <Button
@@ -156,6 +158,15 @@
                 android:background="@color/colorPrimary"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                />
+
+            <Button
+                android:text="Modificar Curso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnModificarCurso"
+                android:layout_weight="1"
+                android:onClick="irModificarCursos"
                 />
         </LinearLayout>
 

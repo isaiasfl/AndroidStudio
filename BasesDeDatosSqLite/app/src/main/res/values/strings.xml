@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Uso de Bases de Datos en Android</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="Cursos">
+        <item>1CFGS</item>
+        <item>2CFGS</item>
+        <item>1CFGM</item>
+        <item>2CFGM</item>
+    </string-array>
+
+
 </resources>

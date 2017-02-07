@@ -10,4 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="es.iesguadalpea.dptoinformatica.isaias.basesdedatossqlite.InformacionProfesorado">
 
+    <Button
+        android:text="Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/btnVolver"
+        android:onClick="volver"
+
+        />
 </RelativeLayout>
